@@ -6,34 +6,17 @@ public class ForExam04_배열07 {
 
 	public static void main(String[] args) {
 		
-		for(int i=0; i<5; i++) { //세로
-			for(int j=0; j<5; j++) { //가로
-			System.out.print("* ");
-			
+		// 구구단 출력 교재랑 좀 다름
+		
+		for(int m=2; m<=9; m++) {
+			System.out.printf("****%d단****\n*", m);
+			for(int n=1; n<=9; n++) {
+				System.out.printf("%dx%d=%d\n", m, n, m*n);
 			}
 			System.out.println();
 		}
-		// 중괄호 잘 닫기... 이것 땜에 오류나...
-		System.out.println();
-		System.out.println();
 		
-		for(int i=0; i<5; i++) { //세로
-			for(int j=0; j<i+1; j++) { //가로
-				System.out.printf("* ");
-			}	
-			System.out.println();
 		
-		}
-		
-		System.out.println();
-		System.out.println();
-		
-		for(int i=0; i<5; i++) { //세로
-			for(int j=0; j<5-i; j++) { //가로
-				System.out.printf("* ");
-			}	
-			System.out.println();
-		}
 	}
 		
 }
