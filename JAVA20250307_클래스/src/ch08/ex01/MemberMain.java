@@ -11,6 +11,7 @@ public class MemberMain {
 		System.out.println();
 		
 		Member M2 = new Member("김냄비", "kim");
+		//객체변수 password와 age를 적지 않아 null, 0가 뜬다.
 		
 		M2.displayInfo();
 	}
