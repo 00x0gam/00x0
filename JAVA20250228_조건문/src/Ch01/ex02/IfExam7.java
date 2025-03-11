@@ -23,13 +23,13 @@ public class IfExam7 {
   
    Scanner sc = new Scanner(System.in);
    int age = 0;
-   double fee = 0; //버스 요금 //int fee = 0; (2)
+   double fee = 2000; //버스 요금 //int fee = 0; (2)
    double rate = 0; //할인율
    
    System.out.println("나이: ");
    age = sc. nextInt();
    
-   if(age <= 65 || age <= 5) {
+   if(age >= 65 || age <= 5) {
         rate = 0;
    }else if(age>=6 && age<=12) {
         rate = 0.5;
@@ -39,7 +39,7 @@ public class IfExam7 {
         rate = 1;
    }
            
-        fee = fee*rate;  // fee = (int)fee*rate; (2)
+        fee = (int)(fee*rate);  // fee = (int)fee*rate; (2)
         System.out.printf("버스 요금 %.0f원 입니다.\n", fee);
         //소수점 안 찍고 나오는 방법 (1)
         System.out.println("종료");
