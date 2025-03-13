@@ -41,6 +41,9 @@ public class 연습 {
 		
 		System.out.println("최대: "+max+", 최소: "+min);
 		
+		//정렬
+		
+		
 	}
 
 }
