@@ -4,13 +4,13 @@ public class Multiplication {
 	private int dan; 
 	private int number; 
 	
-	 Multiplication() {} 
+	 public Multiplication() {} 
 	 
-	 Multiplication(int dan) { 
+	 public Multiplication(int dan) { 
 	  this.dan = dan; 
 	 } 
 	 
-	 Multiplication(int dan, int number){ 
+	 public Multiplication(int dan, int number){ 
 	  this.dan = dan; 
 	  this.number = number; 
 	 } 
@@ -18,13 +18,13 @@ public class Multiplication {
 	 void printPart() { 
 	  if (number == 0) {         
 	   for(int n=1; n <= 9; n++) 
-	    System.out.print("\t"+dan + "*" + n+ "="+dan*n); 
+	    System.out.print("\t" + dan + "*" + n + "="+ (dan*n) + "\t"); 
 	   
 	   System.out.println();
 	   
 	   }else { 
 		   
-	   System.out.println(dan * number);
+	   System.out.println(dan * number + " = " + dan * number);
 	  } 
 	 }
 	 
